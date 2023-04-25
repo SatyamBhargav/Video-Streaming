@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddVideoFrame">
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="320sp"
+        android:layout_margin="23sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="290sp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/vtitle"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter video title"/>
+
+        <Button
+            android:layout_width="320sp"
+            android:layout_height="55sp"
+            android:id="@+id/browseVideo"
+            android:textAllCaps="false"
+            android:text="Browse Video"
+            android:textSize="18sp"/>
+        <Button
+            android:layout_width="320sp"
+            android:layout_height="55sp"
+            android:id="@+id/upload"
+            android:textAllCaps="false"
+            android:text="Upload Video"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>
